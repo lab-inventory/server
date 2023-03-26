@@ -1,13 +1,11 @@
 package com.inventory.controller;
 
 import com.inventory.model.Category;
-import com.inventory.model.Product;
 import com.inventory.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @CrossOrigin("*")
 @RestController
@@ -29,17 +27,17 @@ public class CategoryController {
 		return "new category added";
 	}
 
-	@GetMapping("/get/{id}")
-	public String getCategory(@PathVariable("identity") Integer id) {
-		return categoryService.findById(id).get();
-	}
+//	@GetMapping("/get/{id}")
+//	public Integer getCategory(@PathVariable("identity") Integer id) {
+//		return categoryService.findById(id);
+//	}
 
-	@DeleteMapping("/delete-category/{id}")
-	public boolean deleteCategory(@PathVariable("id") Integer id) {
-		if (!categoryService.findById(id).equals(Optional.empty())) {
-			categoryService.deleteById(id);
-			return true;
-		}
-		return false;
-	}
+//	@DeleteMapping("/delete-category/{id}")
+//	public boolean deleteCategory(@PathVariable("id") Integer id) {
+//		if (!categoryService.findById(id).equals(Optional.empty())) {
+//			categoryService.deleteById(id);
+//			return true;
+//		}
+//		return false;
+//	}
 }
