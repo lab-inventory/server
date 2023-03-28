@@ -2,6 +2,7 @@ package com.inventory.controller;
 
 import com.inventory.model.Category;
 import com.inventory.service.CategoryService;
+import com.inventory.structures.StackStructure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
