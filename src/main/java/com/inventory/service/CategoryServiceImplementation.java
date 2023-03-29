@@ -19,10 +19,9 @@ public class CategoryServiceImplementation implements CategoryService {
 	public void saveCategory(Category category) {
 		List<Category> allCategories = categoryRepository.findAll();
 		int id = allCategories.isEmpty() ? 0 : allCategories.get(allCategories.size() - 1).getId();
-		if (id != 0 && id <= 4) {
+		if (id <= 4) {
 			categoryStackStruct.push(category);
-			System.out.println(category);
-			categoryRepository.saveAll(categoryStackStruct);
+			categoryRepository.save(category);
 		} else if (id >= 5 && id <= 9) {
 			categoryQueueStruct.add(category);
 			categoryRepository.saveAll(categoryQueueStruct);
