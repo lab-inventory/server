@@ -12,7 +12,7 @@ import java.util.*;
 public class CategoryServiceImplementation implements CategoryService {
 	@Autowired
 	private CategoryRepository categoryRepository;
-	private Stack<Category> categoryStackStruct = new Stack<>();
+	private Stack<String[]> categoryStackStruct = new Stack<>();
 	private Queue<Category> categoryQueueStruct = new ArrayDeque<>();
 
 	@Override
@@ -21,7 +21,7 @@ public class CategoryServiceImplementation implements CategoryService {
 		int id = allCategories.isEmpty() ? 0 : allCategories.get(allCategories.size() - 1).getId();
 		if (id <= 4) {
 			categoryStackStruct.push(category);
-			categoryRepository.save(categoryStackStruct);
+			categoryRepository.saveAll(categoryStackStruct);
 		} else if (id >= 5 && id <= 9) {
 			categoryQueueStruct.add(category);
 			categoryRepository.saveAll(categoryQueueStruct);
