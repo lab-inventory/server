@@ -24,6 +24,8 @@ public class CategoryController {
 //	create new category
 	@PostMapping("/create-category")
 	public String createCategory(@RequestBody Category category) {
+		ObjectMapper objectMapper = new ObjectMapper();
+		System.out.println(objectMapper.readValue(jsonString, category.class));
 		categoryService.saveCategory(category);
 		return "new category added";
 	}
