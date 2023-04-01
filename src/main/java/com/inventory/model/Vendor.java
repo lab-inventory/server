@@ -1,21 +1,32 @@
 package com.inventory.model;
-
+import lombok.Setter;
+import lombok.Getter;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.sql.Date;
-
+@Getter
+@Setter
 @Entity
+@Table(name = "Vendor")
 public class Vendor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private int id;
+	@Column(name = "vendorName")
 	private String vendorName;
+	@Column(name = "phone")
 	private int phone;
+	@Column(name = "address")
 	private String address;
+	@Column(name = "dateAdded")
 	private Date dateAdded;
+	@Column(name = "country")
 	private String country;
 
 	public Vendor(int id, String vendorName, int phone, String address, Date dateAdded, String country) {
