@@ -14,22 +14,4 @@ public class InventoryApplication {
 		SpringApplication.run(InventoryApplication.class, args);
 	}
 
-//	@Autowired
-
-//	private CategoryRepository categoryRepository;
-
-//	@Override
-//	public void run(String... args) throws Exception {
-//		Category category = new Category();
-//		category.setCategoryName("Beverages");
-//		category.setCategoryId("sku1");
-//		category.setDescription("All kinds of beverages but no coffee available at the moment");
-//		categoryRepository.save(category);
-//
-//		Category category1 = new Category();
-//		category1.setCategoryName("Drinks");
-//		category1.setCategoryId("sku2");
-//		category1.setDescription("All kinds of drinks including liquor");
-//		categoryRepository.save(category1);
-//	}
 }
