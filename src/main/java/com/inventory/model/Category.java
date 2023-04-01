@@ -57,4 +57,11 @@ public class Category {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+    public void setCategoryName(String drinks) {
+    }
+
+	public void setCategoryId(int i) {
+
+	}
 }

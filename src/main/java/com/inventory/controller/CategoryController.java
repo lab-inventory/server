@@ -2,7 +2,7 @@ package com.inventory.controller;
 
 import com.inventory.model.Category;
 import com.inventory.service.CategoryService;
-import com.inventory.structures.StackStructure;
+//import com.inventory.structures.StackStructure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +24,7 @@ public class CategoryController {
 //	create new category
 	@PostMapping("/create-category")
 	public String createCategory(@RequestBody Category category) {
+		System.out.println(category);
 		categoryService.saveCategory(category);
 		return "new category added";
 	}
