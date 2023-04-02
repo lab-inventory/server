@@ -9,6 +9,12 @@ import java.util.Stack;
 
 
 public class StackStruct extends Category {
+<<<<<<< Updated upstream
+=======
+
+
+    public static void main(String[] args){
+>>>>>>> Stashed changes
 
     public static void main(String[] args) {
         CategoryRepository categoryRepository = null;

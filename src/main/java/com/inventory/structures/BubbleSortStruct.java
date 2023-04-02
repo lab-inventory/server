@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 package com.inventory.structures;
 
 import com.inventory.model.Category;
@@ -21,3 +22,5 @@ public class BubbleSortStruct {
 		}	
 	}
 }
+=======
+>>>>>>> Stashed changes
