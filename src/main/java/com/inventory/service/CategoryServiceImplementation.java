@@ -21,6 +21,8 @@ public class CategoryServiceImplementation implements CategoryService {
 			int id = allCategories.isEmpty() ? 0 : allCategories.get(allCategories.size() - 1).getId();
 			if (id <= 4) {
 				categoryStackStruct.push(category);
+				List<Category> reversedCategories = new ArrayList<>(categoryStackStruct);
+				Collections.reverse(reversedCategories);
 				categoryRepository.saveAll(categoryStackStruct);
 			} else if (id >= 5 && id <= 9) {
 				categoryQueueStruct.add(category);
