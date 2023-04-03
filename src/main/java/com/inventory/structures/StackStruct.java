@@ -12,7 +12,9 @@ import java.util.Stack;
 public class StackStruct extends Category {
     private int max;
     private Object[] items;
-    private int count;
+    private int front;
+    private  int count;
+
     private CategoryService categoryService;
 
     public StackStruct(int max) {
