@@ -1,0 +1,149 @@
+[33mcommit 8c8eb68da9687d164433f11b5c4351e79577858b[m[33m ([m[1;36mHEAD -> [m[1;32malan[m[33m)[m
+Author: Kry208 <126319198+Kry208@users.noreply.github.com>
+Date:   Sun Apr 2 18:27:00 2023 +0100
+
+    changed
+
+[33mcommit 04f1b4a6e4d6184337ed8a13f1b3b8f745a25711[m
+Author: Kry208 <126319198+Kry208@users.noreply.github.com>
+Date:   Sat Apr 1 14:46:39 2023 +0100
+
+    Update BubbleSortStruct.java
+
+[33mcommit f879b8bf237762448fabee251a9431512f7aab2e[m[33m ([m[1;32mkry[m[33m)[m
+Author: Kry208 <126319198+Kry208@users.noreply.github.com>
+Date:   Sat Apr 1 08:49:55 2023 +0100
+
+    changes made to the structure folder
+
+[33mcommit 1f6126e3458d8828a4e0f0671419f6007752cb54[m[33m ([m[1;32mcheckout[m[33m)[m
+Author: Kry208 <126319198+Kry208@users.noreply.github.com>
+Date:   Thu Mar 30 18:39:23 2023 +0100
+
+    built the structures for the data implementation
+
+[33mcommit 38a58ec7bb605ea3337ee7fd82a816ee3f032ff5[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Wed Mar 29 19:44:55 2023 +0000
+
+    refactory the saveall method
+
+[33mcommit 4ab7608228f4853f077e917828770a85b2469fe3[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Wed Mar 29 19:42:01 2023 +0000
+
+    define values of vendors in the database
+
+[33mcommit 93e55818bcd546a583bd44eaf4dce104e150ddd6[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Wed Mar 29 19:40:32 2023 +0000
+
+    handle errors when on controllers
+
+[33mcommit 99179c212ab26daf5a70d58b43f52b7d69ab8948[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Wed Mar 29 19:34:44 2023 +0000
+
+    changed naming convention of values
+
+[33mcommit e579c284c3d0eb171414c398a2d550cb88c1550c[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Wed Mar 29 19:32:20 2023 +0000
+
+    changed naming convention of items
+
+[33mcommit 71db5538149ac36f7b4f906dd1fe4f610562b210[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Wed Mar 29 19:29:53 2023 +0000
+
+    added the stack implementation service for items with id less than 4 and queue for items with id  >= 5
+
+[33mcommit c3139c9f05fe64a2287b2fcb7345d742d531be59[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Tue Mar 28 20:08:38 2023 +0000
+
+    added the push method and remove method of the Stack Structure
+
+[33mcommit 2f9d97563c1d466d221200e3e6bbc6da5697ea0f[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Tue Mar 28 19:45:28 2023 +0000
+
+    added the push method and remove method of the Stack Structure
+
+[33mcommit 0701f0ee4136630dfb52f3a5d88ef5f6135326fc[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Sun Mar 26 15:25:56 2023 +0000
+
+    added a list query block to check for the last index of available categories
+
+[33mcommit 9eb2f92354a8d364dc8a714bee40cc100ebdf862[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Sat Jan 1 00:40:15 2022 +0000
+
+    added category service interface class
+
+[33mcommit 357a4954a1e0df69a7b4040f3a657a99c62e2226[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Sat Jan 1 00:33:24 2022 +0000
+
+    added the vendor controller
+
+[33mcommit 3400e3ee86958d0ade2ec39669bd3c0c0f0052c4[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Sat Jan 1 00:31:37 2022 +0000
+
+    added the category controller
+
+[33mcommit 79dcf0b4ad40ee937f82477851b9c6259466065f[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Sat Jan 1 00:18:44 2022 +0000
+
+    added the get all products, delete product method and renamed the request mapping string
+
+[33mcommit a777c961c2619989a0030cf529af4020060f832a[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Sat Jan 1 00:13:16 2022 +0000
+
+    added the lombok dependancy
+
+[33mcommit 6b8818831b75b335deec5a7bd2632f633494343b[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Thu Mar 9 10:55:52 2023 +0000
+
+    configured the database schema
+
+[33mcommit 99e7828e7ae330e8a7926f9fb2317c2411844edc[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Thu Mar 9 10:49:03 2023 +0000
+
+    create a interface for the service of product made the implematation in the class
+
+[33mcommit b37cff5be30ab5cb7efec32d3bf358a20aa0dc7e[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Thu Mar 9 10:46:50 2023 +0000
+
+    create a java interface for the product repository
+
+[33mcommit 052a9bf15af249cd920770840649085161053ef3[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Thu Mar 9 10:45:52 2023 +0000
+
+    added a post method to add products to product table
+
+[33mcommit 45e739962c3f7f86b67012136ba19b6cac096958[m
+Author: Edward Edgar Arthur <108295488+edgararthur@users.noreply.github.com>
+Date:   Thu Mar 9 10:27:16 2023 +0000
+
+    added a README file
+
+[33mcommit 56c9f7ffb575eb87ba32c35c09834eeb80619787[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Thu Mar 9 10:20:20 2023 +0000
+
+    defined the product model table
+
+[33mcommit 4a5911427f40b974c71ec28ab43f4d7467d9e0eb[m
+Author: edgararthur <gilfoylearthur@protonmail.com>
+Date:   Wed Mar 8 22:12:57 2023 +0000
+
+    initial commit
