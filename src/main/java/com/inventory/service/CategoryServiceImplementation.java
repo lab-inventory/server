@@ -2,6 +2,7 @@ package com.inventory.service;
 
 import com.inventory.model.Category;
 import com.inventory.repository.CategoryRepository;
+import com.inventory.structures.StackStructure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,8 @@ import java.util.*;
 public class CategoryServiceImplementation implements CategoryService {
 	@Autowired
 	private CategoryRepository categoryRepository;
-	private Stack<Category> categoryStackStruct = new Stack<Category>();
+	private StackStructure<Category> stackStructure = new StackStructure<>(4);
+
 	private Queue<Category> categoryQueueStruct = new ArrayDeque<>();
 
 	@Override
@@ -20,10 +22,8 @@ public class CategoryServiceImplementation implements CategoryService {
 			List<Category> allCategories = categoryRepository.findAll();
 			int id = allCategories.isEmpty() ? 0 : allCategories.get(allCategories.size() - 1).getId();
 			if (id <= 4) {
-				categoryStackStruct.push(category);
-				List<Category> reversedCategories = new ArrayList<>(categoryStackStruct);
-				Collections.reverse(reversedCategories);
-				categoryRepository.saveAll(categoryStackStruct);
+				stackStructure.push(category);
+				categoryRepository.saveAll(Arrays.asList(stackStructure.pop()));
 			} else if (id >= 5 && id <= 9) {
 				categoryQueueStruct.add(category);
 				categoryRepository.saveAll(categoryQueueStruct);
@@ -45,14 +45,17 @@ public class CategoryServiceImplementation implements CategoryService {
 
 	@Override
 	public void deleteById(Integer id) {
-		List<Category> categories = categoryRepository.findAll();
-		int categoryId = categories.get(categories.size() - 1).getId();
-		if (categoryId != 0 && categoryId <= 4)
-			for (Category category : categoryStackStruct) {
-				if (category.getId() == id)
-					categoryStackStruct.remove(category);
-					categoryRepository.deleteById(id);
-					break;
+		categoryRepository.deleteById(id);
+	}
+
+	@Override
+	public Category updatedCategory(Integer id, Category category) {
+		Category existingCategory = categoryRepository.findById(id).orElse(null);
+		if (existingCategory != null) {
+			existingCategory.setName(category.getName());
+			existingCategory.setCid(category.getCid());
+			existingCategory.setDescription(category.getDescription());
 		}
+		return existingCategory;
 	}
 }
