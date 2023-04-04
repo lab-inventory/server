@@ -5,7 +5,7 @@ public class StackStructure {
 	private Object[] items;
 	private int count;
 
-	public StackStructure(int max) {
+	public StackStructure() {
 		this.max = max;
 		items = new Object[max];
 	}
