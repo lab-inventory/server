@@ -10,6 +10,10 @@ public class User {
     private int id;
     private String firstName;
     private String lastName;
+    @NotBlankt(message = "Email is required")
+    @Email(message = "invalid email address")
+    @pattern(regexp = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",
+            message = "invalid email address format")
     private String email;
     private String password;
 
